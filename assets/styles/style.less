@@ -1,0 +1,120 @@
+@background_wrapper_width : 1680px;
+@wrapper_width : 958px;
+@shadow_width : 1050px;
+
+@import 'reset.less';
+@import 'default_style.less';
+@import 'bootstrap.less';
+
+.uploadify {
+  display: inline-block;
+  position: inherit;
+}
+
+.uploadify-button {
+  background: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  display: inline-block;
+  width: 150px;
+}
+.uploadify:hover .uploadify-button {
+  background-color: transparent;
+}
+
+#loading_message,
+#success_message {
+}
+
+html > body {
+  background: url('../images/background.png') repeat scroll 0 0 transparent;
+
+  > section.wrapper {
+    width:960px;
+    margin: 0 auto;
+
+    > header {
+      display: block;
+      margin: 25px 0 15px 0;
+
+      > p {
+        display: block;
+        text-align: center;
+        font-size: 3.5em;
+
+        color:#EBEBEB;
+      }
+    }
+
+    > section.content {
+      background: url('../images/background_white.png') repeat scroll 0 0 transparent;
+      padding:10px;
+      border: 1px solid #d0c2c1;
+      border-radius: 5px;
+      min-height: 600px;
+
+      > section.testimonial_list {
+        > section.testimonial {
+          padding: 20px;
+          border-bottom: 2px dotted #d0c2c1;
+          margin-bottom: 30px;
+          padding-bottom: 25px;
+
+          > figure {
+            padding: 0 20px 10px 0;
+            float: left;
+
+            > img {
+              width:120px;
+              height:120px;
+              border-radius: 10px;
+            }
+          }
+
+          > p.name {
+            color:#545454;
+            font-size: 2.4em;
+          }
+
+          > p.website {
+            font-size: 1.2em;
+            color: #ffffff;
+          }
+
+          > p.post_date {
+            text-align: right;
+          }
+        }
+      }
+
+      > section.testimonial_add {
+        display: block;
+        width: 650px;
+        margin: 0 auto;
+
+        > form {
+
+          > div.left {
+            width:500px;
+          }
+
+          > div.right {
+            width: 150px;
+
+            > div {
+              margin: 210px 0 0 0;
+
+              > img {
+                width:120px;
+                height:120px;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
